@@ -1,11 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
-    
-</body>
+  </head>
+  <body>
+    <script>
+      currentDate = new Date();
+      futureDate = new Date();
+      futureDate.setDate = futureDate.getDate() + 4;
+      date = currentDate.getDate();
+      month = currentDate.getMonth() + 1;
+      year = currentDate.getFullYear();
+      alert(`Current Date: ${date}/${month}/${year}`);
+      year = futureDate.getFullYear();
+      month = futureDate.getMonth() + 1;
+
+      alert(`Future Date: ${futureDate.setDate}/${month}/${year}`);
+      dayDiff = futureDate.setDate - date;
+      alert(`Day Difference: ${dayDiff} days`);
+    </script>
+  </body>
 </html>

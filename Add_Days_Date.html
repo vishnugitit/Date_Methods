@@ -1,13 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
+  </head>
+  <body>
     <script>
         
+        
+        currentDate = new Date();
+        date = currentDate.getDate();
+      month = currentDate.getMonth() + 1;
+      year = currentDate.getFullYear();
+      alert(`Current Date: ${year}/${month}/${date}`);
+      futureDate = new Date();
+      futureDate.setDate = futureDate.getDate() + 3;
+      year = futureDate.getFullYear();
+      month = futureDate.getMonth() + 1;
+      alert(`Future Date: ${year}/${month}/${futureDate.setDate}`);
     </script>
-</body>
+  </body>
 </html>
